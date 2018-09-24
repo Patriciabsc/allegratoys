@@ -4,9 +4,9 @@ Product.destroy_all
 
 puts 'Creating categories...'
   cat_tourism = Category.create!(name: 'Tourisme',
-                                  pic_url: 'https://images.unsplash.com/photo-1533021465698-203cf8b7936f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=226635089169a49de62c0c1f0bc27d5f&auto=format&fit=crop&w=1050&q=80')
+                                pic_url: 'https://images.unsplash.com/photo-1533021465698-203cf8b7936f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=226635089169a49de62c0c1f0bc27d5f&auto=format&fit=crop&w=750&q=80')
   cat_family = Category.create!(name: 'Famille',
-                                pic_url: 'https://images.unsplash.com/photo-1512834945397-dc15de857576?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b98bfa8b298a72d0f3c9051b346affc&auto=format&fit=crop&w=1049&q=80')
+                                pic_url: 'https://images.unsplash.com/photo-1510799221123-954eaf8a2ed6?ixlib=rb-0.3.5&s=03156a34f40c35ee62001400c30abfbb&auto=format&fit=crop&w=750&q=80')
 
 puts 'Creating products...'
   prod_fans = Product.create!(name: 'Fans of Paris',
