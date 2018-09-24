@@ -1,2 +1,31 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('https://images.unsplash.com/photo-1526548185067-231ab81c7178?ixlib=rb-0.3.5&s=776285810f39bbd843c0a1087317a3f4&auto=format&fit=crop&w=334&q=80');">
+  <div class="banner-content">
+    <h1>Nos nouveaux produits</h1>
+    <p>Inventons ensemble les jouets de demain</br></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="title">
+        <h2>Découvrez Fans of Paris, FrisFly et Ma Famille et Moi, nos 3 nouveaux produits</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= product.pic_url %>');">
+          <div class="card-title">
+            <h3><%= product.name %></h3>
+          </div>
+          <a class="card-link" href="/products/<%= "#{product.id}-#{product.name.parameterize}" %>"  ></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
