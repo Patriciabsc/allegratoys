@@ -4,4 +4,8 @@ class Product < ApplicationRecord
 
   validates :name, presence: :true
   validates :description, presence: :true
+
+  def to_param
+    "#{id}-#{name.parameterize}"
+  end
 end

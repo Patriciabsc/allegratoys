@@ -1,2 +1,47 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('https://images.unsplash.com/photo-1531902706636-a9966c06605a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69d2ce772ef4bd0c18e91e6bf8c1ec67&auto=format&fit=crop&w=1051&q=80');">
+  <div class="banner-content">
+    <h1>Allegra Toys</h1>
+    <p>Inventons ensemble les jouets de demain</br></p>
+
+    <h3><%= link_to "Nos nouvelles collections", categories_path, class: 'btn-rounded-white' %></h3>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="title">
+        <h2>Collections tourisme et famille</h2>
+        <p>Après avoir innové dans les jouets pour enfants, Allegra Toys se développe aujourd'hui sur les jouets liés au tourisme et la famille</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <% @categories.each do  |category| %>
+      <div class="col-xs-12 col-md-6 col-md-offset-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://source.unsplash.com/featured/?<%= category.name %>');">
+          <div class="card-description">
+            <h2><%= category.name %></h2>
+          </div>
+          <a class="card-link" href="/products/<%= "#{category.id}-#{category.name.parameterize}" %>"  ></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="content">
+  <% @products.each do |product| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://source.unsplash.com/featured/?<%= product.category %>');">
+        <div class="card-description">
+          <h2><%= product.name %></h2>
+        </div>
+        <a class="card-link" href="/products/<%= "#{product.id}-#{product.name.parameterize}" %>"  ></a>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
