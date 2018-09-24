@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12">
       <div class="title">
         <h2>Collections tourisme et famille</h2>
         <p>Après avoir innové dans les jouets pour enfants, Allegra Toys se développe aujourd'hui sur les jouets liés au tourisme et la famille</p>
@@ -19,9 +19,9 @@
   <div class="row">
     <% @categories.each do |category| %>
       <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), url('<%= category.pic_url %>');">
-          <div class="card-description">
-            <h2><%= category.name %></h2>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= category.pic_url %>');">
+          <div class="card-title">
+            <h2><%= category.name.upcase %></h2>
           </div>
           <a class="card-link" href="/products/<%= "#{category.id}-#{category.name.parameterize}" %>"  ></a>
         </div>
@@ -30,7 +30,7 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12">
       <div class="title">
         <h2>Nos nouveaux produits</h2>
         <p>Découvrez Fans of Paris, FrisFly et Ma Famille et Moi, nos 3 nouveaux produits</p>
@@ -41,9 +41,9 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= product.pic_url %>');">
-          <div class="card-description">
-            <h2><%= product.name %></h2>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= product.pic_url %>');">
+          <div class="card-title">
+            <h3><%= product.name %></h3>
           </div>
           <a class="card-link" href="/products/<%= "#{product.id}-#{product.name.parameterize}" %>"  ></a>
         </div>

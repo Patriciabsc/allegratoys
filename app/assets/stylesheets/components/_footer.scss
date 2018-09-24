@@ -1,0 +1,56 @@
+#myFooter {
+    background-color: $blue;
+    color: $white;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: $yellow;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: $black;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: $white;
+    li {
+      font-size: 14px;
+    }
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+}
+
+#myFooter a {
+    text-decoration: none;
+    color: $white;
+}
+
+#myFooter .btn {
+  margin-top: 20px;
+  line-height: 25px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+#myFooter .footer-logo {
+  padding-right: 5px;
+}
+

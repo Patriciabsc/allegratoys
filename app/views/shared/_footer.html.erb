@@ -1,0 +1,55 @@
+
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo -->
+      <div class="col-sm-1">
+        <%= link_to root_path do %>
+          <%= image_tag "logo.png", class:"footer-logo", height: 50 %>
+        <% end %>
+      </div>
+
+      <!-- Allegra -->
+      <div class="col-sm-3">
+        <h5>Allegra Toys</h5>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/pages/about">Nous connaître</a></li>
+            <li><a href="http://www.allegratoys.com">Notre site consommateurs</a></li>
+        </ul>
+      </div>
+
+      <!-- Tourisme -->
+      <div class="col-sm-3">
+        <h5>Collection Tourisme</h5>
+        <ul>
+            <li><a href="#">Fans of Paris</a></li>
+        </ul>
+      </div>
+
+      <!-- Famille -->
+      <div class="col-sm-3">
+        <h5>Collection Famille</h5>
+        <ul>
+            <li><a href="#">Ma Famille et Moi</a></li>
+            <li><a href="#">FrisFly</a></li>
+        </ul>
+      </div>
+
+      <!-- Nous contacter -->
+      <div class="col-sm-2">
+        <%= mail_to "allegratoys@gmail.com", class: "btn btn-rounded-green" do %>
+          <strong>Contactez nous</strong>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">
+      <p>© 2018 Copyright Allegratoys</p>
+  </div>
+
+</footer>
