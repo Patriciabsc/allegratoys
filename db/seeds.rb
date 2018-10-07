@@ -25,7 +25,7 @@ puts 'Creating products...'
                               description: 'pub-arbre',
                               category_id: 2,
                               add_info: "ARBRE GENEALOGIQUE POUR ENFANT",
-                              pictures: "Arbre, Medaillon, Verso, Recto",
+                              pictures: "Arbre, Medaillon, Verso",
                               pic_url: 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd43b6c1f85893b7159004db434d9593&auto=format&fit=crop&w=1053&q=80')
 
 puts 'Finished!'
