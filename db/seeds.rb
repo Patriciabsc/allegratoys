@@ -22,10 +22,10 @@ puts 'Creating products...'
                               pictures: "Animals, Planets, Louvre",
                               pic_url: 'https://images.unsplash.com/photo-1527223090385-ca195a6c3acc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cd6f74a9213ce6748c78118782a8a82&auto=format&fit=crop&w=1050&q=80')
   prod_arbre = Product.create!(name: 'Ma Famille et Moi',
-                              description: 'pub-fris',
+                              description: 'pub-arbre',
                               category_id: 2,
                               add_info: "ARBRE GENEALOGIQUE POUR ENFANT",
-                              pictures: "Arbre, Medaillon",
+                              pictures: "Arbre, Medaillon, Verso, Recto",
                               pic_url: 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd43b6c1f85893b7159004db434d9593&auto=format&fit=crop&w=1053&q=80')
 
 puts 'Finished!'
