@@ -1,22 +1,19 @@
 <div class="content-show-prod">
   <div class="container">
     <div class="row">
-      <div class="title-product">
-        <h1><%= @product.name %></h1>
-      </div>
+<!--       <div class="title-product">
+        <h1><#%= @product.name %></h1>
+      </div> -->
       <div class="col-xs-12 col-md-6">
         <div class="description-product">
-          <%= image_tag "#{@product.description}.pdf", class:"description-pic" %>
+          <%= image_tag "#{@product.description}.jpg", class:"description-pic" %>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
-        <div class="images-product-main">
-          <% pictures_array = @product.pictures.split(", ") %>
-          <%= image_tag "#{pictures_array[0]}.jpg", class:"main-pic" %>
-        </div>
         <div class="images-product-all">
-          <% pictures_array[1..3].each do |picture|  %>
-            <%= image_tag "#{picture}.jpg", class:"all-pic" %>
+          <% pictures_array = @product.pictures.split(", ") %>
+          <% pictures_array.each do |picture|  %>
+            <%= image_tag "#{picture}.png", class:"all-pic" %>
           <% end %>
         </div>
       </div>

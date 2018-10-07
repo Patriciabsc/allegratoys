@@ -12,7 +12,7 @@ puts 'Creating products...'
   prod_fans = Product.create!(name: 'A Fan of Paris',
                               description: 'pub-fan',
                               category_id: 1,
-                              pictures: "Louvre, Versailles, Orsay, Metro, Map",
+                              pictures: "Louvre, Versailles, Metro, Map, Orsay",
                               pic_url: 'https://images.unsplash.com/photo-1526816222984-8362d302d9c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c294cb1290b83535dc9d33be72b4138e&auto=format&fit=crop&w=675&q=80')
   prod_fris = Product.create!(name: 'FrisFly',
                               description: 'Jeu de golf de plage avec frisbee pour les enfants et les parents',
