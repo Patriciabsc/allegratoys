@@ -9,10 +9,10 @@ puts 'Creating categories...'
                                 pic_url: 'https://images.unsplash.com/photo-1510799221123-954eaf8a2ed6?ixlib=rb-0.3.5&s=03156a34f40c35ee62001400c30abfbb&auto=format&fit=crop&w=750&q=80')
 
 puts 'Creating products...'
-  prod_fans = Product.create!(name: 'Fans of Paris',
-                              description: 'Collection de pop-up fans pour les musées Parisiens',
+  prod_fans = Product.create!(name: 'A Fan of Paris',
+                              description: 'pub-fan',
                               category_id: 1,
-                              pictures: "Louvre, Versailles, Orsay, Pub",
+                              pictures: "Louvre, Versailles, Orsay, Metro, Map",
                               pic_url: 'https://images.unsplash.com/photo-1526816222984-8362d302d9c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c294cb1290b83535dc9d33be72b4138e&auto=format&fit=crop&w=675&q=80')
   prod_fris = Product.create!(name: 'FrisFly',
                               description: 'Jeu de golf de plage avec frisbee pour les enfants et les parents',
