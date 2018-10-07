@@ -1,14 +1,14 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('https://images.unsplash.com/photo-1531902706636-a9966c06605a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69d2ce772ef4bd0c18e91e6bf8c1ec67&auto=format&fit=crop&w=1051&q=80');">
   <div class="banner-content">
     <h1>Allegra Toys</h1>
-    <p>Inventons ensemble les jouets de demain</br></p>
+    <!-- <p>Inventons ensemble les jouets de demain</br></p> -->
 
     <h3><%= link_to "Nos nouveaux produits", products_path, class: 'btn-rounded-white' %></h3>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-xs-12">
       <div class="title">
         <h2>Collections tourisme et famille</h2>
@@ -16,18 +16,20 @@
       </div>
     </div>
   </div>
+
   <div class="row">
-    <% @categories.each do |category| %>
+    <%# @categories.each do |category| %>
       <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= category.pic_url %>');">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<#%= category.pic_url %>');">
           <div class="card-title">
-            <h2><%= category.name.upcase %></h2>
+            <h2><%#= category.name.upcase %></h2>
           </div>
-          <a class="card-link" href="/products/<%= "#{category.id}-#{category.name.parameterize}" %>"  ></a>
+          <a class="card-link" href="/products/<%#= "#{category.id}-#{category.name.parameterize}" %>"  ></a>
         </div>
       </div>
-    <% end %>
+    <%# end %>
   </div>
+     -->
 
   <div class="row">
     <div class="col-xs-12">
