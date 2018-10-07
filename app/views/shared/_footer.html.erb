@@ -4,15 +4,15 @@
     <div class="row">
 
       <!-- Logo -->
-      <div class="col-sm-1">
+      <div class="col-sm-2">
         <%= link_to root_path do %>
-          <%= image_tag "logo.png", class:"footer-logo", height: 50 %>
+          <%= image_tag "logo.png", class:"footer-logo", height: 100 %>
         <% end %>
       </div>
 
       <!-- Allegra -->
       <div class="col-sm-3">
-        <h5>Allegra Toys</h5>
+        <h5>Allegra Toys Ltda</h5>
         <ul>
             <li><a href="/">Accueil</a></li>
             <li><a href="/pages/about">Nous connaître</a></li>
@@ -21,27 +21,24 @@
       </div>
 
       <!-- Tourisme -->
-      <div class="col-sm-3">
-        <h5>Collection Tourisme</h5>
+      <div class="col-sm-2">
+        <h5>Produits</h5>
         <ul>
-            <li><a href="#">Fans of Paris</a></li>
-        </ul>
-      </div>
-
-      <!-- Famille -->
-      <div class="col-sm-3">
-        <h5>Collection Famille</h5>
-        <ul>
+            <li><a href="#">A Fan of Paris</a></li>
             <li><a href="#">Ma Famille et Moi</a></li>
             <li><a href="#">FrisFly</a></li>
         </ul>
       </div>
 
       <!-- Nous contacter -->
-      <div class="col-sm-2">
-        <%= mail_to "allegratoys@gmail.com", class: "btn btn-rounded-green" do %>
-          <strong>Contactez nous</strong>
-        <% end %>
+      <div class="col-sm-5">
+        <strong>Contact commercial</strong>
+        <ul>
+          <li><strong>Beatriz Andrade – Manager </strong></li>
+          <li>Allegra Toys Ltda – 84 rue Monge – 75005 – Paris</li>
+          <li>Tel fixe : 09.73.67.99.27    Cell : 07.82.74.01.52</li>
+          <li>Email : allegratoys@gmail.com</li>
+        </ul>
       </div>
 
     </div>
