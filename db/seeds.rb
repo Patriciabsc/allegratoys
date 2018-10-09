@@ -13,7 +13,7 @@ puts 'Creating products...'
                               description: 'pub-fan',
                               category_id: 1,
                               add_info: "POP UP POCKET FAN",
-                              pictures: "Louvre, Versailles, Metro, Map, Orsay",
+                              pictures: "Louvre, Versailles, Metro, Map, Orsay, Paris",
                               pic_url: 'https://images.unsplash.com/photo-1526816222984-8362d302d9c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c294cb1290b83535dc9d33be72b4138e&auto=format&fit=crop&w=675&q=80')
   prod_fris = Product.create!(name: 'FrisFly',
                               description: 'pub-fris',
