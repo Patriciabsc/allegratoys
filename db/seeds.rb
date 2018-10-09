@@ -19,7 +19,7 @@ puts 'Creating products...'
                               description: 'pub-fris',
                               category_id: 2,
                               add_info: "GOLF DE PLAGE",
-                              pictures: "Animals, Planets, Louvre",
+                              pictures: "Animal, Planets, Louvre",
                               pic_url: 'https://images.unsplash.com/photo-1527223090385-ca195a6c3acc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cd6f74a9213ce6748c78118782a8a82&auto=format&fit=crop&w=1050&q=80')
   prod_arbre = Product.create!(name: 'Ma Famille et Moi',
                               description: 'pub-arbre',
